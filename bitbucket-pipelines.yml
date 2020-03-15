@@ -8,3 +8,13 @@ pipelines:
         script:
           - pip install -r requirements.txt
           - python manage.py test
+    - step:
+        name: Deploy to test
+        deployment: test
+        script:
+          - echo "Deploying to test environment"
+    - step:
+        name: Production Deploy
+        trigger: manual
+        script:
+          - echo "This step runs once you click the 'Run' button"
