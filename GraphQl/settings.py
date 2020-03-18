@@ -118,6 +118,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 
+
 """
 graphQl settings
 """
